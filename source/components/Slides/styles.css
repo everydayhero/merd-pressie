@@ -1,0 +1,148 @@
+.base {
+  padding: 4.5em 4em;
+}
+
+.img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0.25em;
+  overflow: hidden;
+  display: block;
+}
+
+.avatar {
+  composes: img;
+}
+
+.title {
+  composes: base;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.title:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.titleText {
+  font-size: 5vw;
+  margin: 0;
+  color: whitesmoke;
+  position: relative;
+}
+
+.heading {
+  font-weight: bold;
+  line-height: 1.1em;
+  font-size: 3em;
+  letter-spacing: 0.005em;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.headingSmall {
+  composes: heading;
+  font-size: 2em;
+}
+
+.headingSmaller {
+  composes: heading;
+  font-size: 1.25em;
+}
+.content {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.text {
+  font-size: 2vw;
+}
+
+.regDiagram {
+  font-size: 0.8em;
+  margin-top: -1em;
+}
+
+.regDiagram, .regDiagramIntegrator {
+  display: flex;
+}
+
+.regDiagramIntegrator {
+  flex: 1 1 66.667%;
+  background-color: #9ec3e5;
+  color: white;
+  padding: 1em;
+  margin: 1em;
+  min-height: 33vh;
+  margin-left: 0;
+}
+
+.regDiagramBox {
+  flex: 1 1 33.333%;
+  padding: 1.5em;
+  background-color: #1d83f6;
+  color: white;
+  margin: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  position: relative;
+}
+
+.regDiagramIntegrator .regDiagramBox:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform-origin: 0% 0%;
+  transform: rotate(-45deg) translate(-50%, -50%);
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #1d83f6;
+}
+
+.littleStat {
+  margin: 0;
+  margin-top: 0.25em;
+  font-size: 2em;
+}
+
+.bigStat {
+  margin: 0;
+  margin-top: 0.25em;
+  font-size: 3em;
+}
+
+.list {
+  margin-top: 0;
+}
+
+.listItem {
+  line-height: inherit;
+  margin-bottom: 0.5em;
+}
+
+.bigBlueStat {
+  background-color: #1d83f6;
+  color: white;
+  padding: 1.25em;
+}
+
+.bigBlueStatNum {
+  composes: heading;
+  font-size: 3.5em;
+  margin-bottom: 0.25em;
+}
+
+p.bigBlueStatContent {
+  line-height: 1em;
+  margin: 0;
+}

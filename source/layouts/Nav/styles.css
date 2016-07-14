@@ -1,0 +1,29 @@
+.base {
+  font-size: 0.9em;
+  background-color: #262626;
+  padding: 0.5em;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.link {
+  display: inline-block;
+  line-height: 1em;
+  text-decoration: none;
+  padding: 0.75em 1.25em;
+  color: white;
+  border-radius: 0.25em;
+  background-color: rgba(255, 255, 255, 0.125);
+  transition: background-color 0.3s ease;
+  margin-right: 0.25em
+}
+
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.activeLink {
+  composes: link;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #262626;
+}

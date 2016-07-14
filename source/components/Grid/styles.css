@@ -1,0 +1,30 @@
+.base {
+  margin-bottom: 0;
+}
+
+.base:before,
+.base:after {
+  content: " ";
+  display: block;
+}
+
+.base:after {
+  clear: both;
+}
+
+.loose   {
+  composes: base;
+  margin: -2em;
+}
+.default {
+  composes: base;
+  margin: -1em;
+}
+.tight {
+  composes: base;
+  margin: -0.5em;
+}
+.none {
+  composes: base;
+  margin: 0;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "merd-pressie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/boiler-room-builder --serve",
+    "build": "BASE_PATH='/merd-pressie' node node_modules/boiler-room-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brad Parker <hi@bradparker.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "boiler-room-builder": "github:everydayhero/boiler-room-builder#e2dde43",
+    "boiler-room-runner": "github:everydayhero/boiler-room-runner#da88b01",
+    "leaflet": "^0.7.7",
+    "node-sass": "^3.8.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.1.0",
+    "tour-tracker": "github:everydayhero/tour-tracker",
+    "velocity-react": "^1.1.5"
+  }
+}

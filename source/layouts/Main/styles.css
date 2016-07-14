@@ -1,0 +1,30 @@
+:root {
+  font-family: Helvetica Nueue, Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  color: #262626;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.base {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.slide {
+  flex: 1 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav {
+  flex: 0 0 auto;
+}
