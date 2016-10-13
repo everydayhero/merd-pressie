@@ -19,6 +19,7 @@ export const title = {
   display: 'flex',
   flexFlow: 'column',
   justifyContent: 'center',
+
   ':before': {
     content: '""',
     position: 'absolute',
@@ -26,7 +27,8 @@ export const title = {
     right: 0,
     top: 0,
     bottom: 0,
-    backgroundColor: 'rgba(0, 0, 0, 0.6)'
+    backgroundColor: '#00a044',
+    mixBlendMode: 'multiply'
   }
 }
 
@@ -43,7 +45,12 @@ export const heading = {
   fontSize: '3em',
   letterSpacing: '0.005em',
   marginTop: '0',
-  marginBottom: '1em'
+  marginBottom: '1em',
+
+  'em': {
+    color: '#00a044',
+    fontStyle: 'normal'
+  }
 }
 
 export const headingSmall = {
