@@ -1231,17 +1231,17 @@
 	  return [_react2.default.createElement(
 	    _NavLink2.default,
 	    {
-	      className: (0, _classes.classes)(styles.link),
-	      key: -1,
-	      to: current === 0 || current === '1' ? '' : '/slides/' + (parseInt(current) - 1) },
-	    'Prev'
+	      className: (0, _classes.classes)(current === 0 ? styles.activeLink : styles.link),
+	      key: 'home',
+	      to: '/' },
+	    'Start'
 	  ), _react2.default.createElement(
 	    _NavLink2.default,
 	    {
-	      className: (0, _classes.classes)(current === 0 ? styles.activeLink : styles.link),
+	      className: (0, _classes.classes)(styles.link),
 	      key: 0,
-	      to: '/' },
-	    'Start'
+	      to: current === 0 || current === '1' ? '' : '/slides/' + (parseInt(current) - 1) },
+	    'Prev'
 	  )].concat(Array.from({ length: count }).map(function (n, i) {
 	    return _react2.default.createElement(
 	      _NavLink2.default,
