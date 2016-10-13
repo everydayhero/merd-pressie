@@ -1,6 +1,8 @@
+const { DefinePlugin } = require('webpack')
+
 module.exports = {
   plugins: [
-    DefinePlugin({
+    new DefinePlugin({
       'process.env.BASE_PATH': `'${process.env.BASE_PATH || ''}'`
     })
   ]

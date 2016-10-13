@@ -6,16 +6,16 @@ import * as styles from './styles'
 const renderLinks = (count, current) => (
   [
     <NavLink
-      className={classes(styles.link)}
-      key={-1}
-      to={(current === 0) || current === '1' ? '' : `/slides/${parseInt(current) - 1}`}>
-      Prev
-    </NavLink>,
-    <NavLink
       className={classes(current === 0 ? styles.activeLink : styles.link)}
-      key={0}
+      key={'home'}
       to='/'>
       Start
+    </NavLink>,
+    <NavLink
+      className={classes(styles.link)}
+      key={0}
+      to={(current === 0) || current === '1' ? '' : `/slides/${parseInt(current) - 1}`}>
+      Prev
     </NavLink>
   ].concat(Array.from({ length: count }).map((n, i) => (
     <NavLink

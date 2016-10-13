@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "brb serve",
+    "start": "brb serve --client-config='./webpack.client.config'",
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "BASE_PATH='/merd-pressie/' brb build --base-path='/merd-pressie/'"
+    "build": "NODE_ENV=production BASE_PATH='/merd-pressie/' brb build --base-path='/merd-pressie/' --client-config='./webpack.client.config'"
   },
   "author": "Brad Parker <hi@bradparker.com>",
   "license": "ISC",
@@ -19,6 +19,7 @@
     "react": "^0.14.8",
     "react-dom": "^0.14.8",
     "react-router": "^2.8.1",
-    "velocity-react": "^1.1.8"
+    "velocity-react": "^1.1.8",
+    "webpack": "^1.13.2"
   }
 }
