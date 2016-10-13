@@ -14,6 +14,12 @@ export const avatar = {
   ...img
 }
 
+export const fullscreen = {
+  ...img,
+  margin: '0 auto',
+  maxWidth: '30em'
+}
+
 export const title = {
   ...base,
   display: 'flex',

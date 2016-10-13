@@ -20,6 +20,7 @@ import flowOne from './assets/flow-1.png'
 import flowTwo from './assets/flow-2.png'
 import flowThree from './assets/flow-3.png'
 import flowFour from './assets/flow-4.png'
+import opgs from './assets/opgs.png'
 
 const Who = () => (
   <div className={classes(styles.base)}>
@@ -159,6 +160,14 @@ const EventbriteUsage = () => (
   </div>
 )
 
+const EventbriteFinale = () => (
+  <div className={classes(styles.base)}>
+    <div className={classes(styles.text)}>
+      <img src={opgs} className={classes(styles.fullscreen)} />
+    </div>
+  </div>
+)
+
 const RobotEmma = () => (
   <div className={classes(styles.title)}>
     <div className={classes(styles.titleText)}>
@@ -263,6 +272,7 @@ export default [
   EventbriteLaunch,
   EventbriteFlow,
   EventbriteUsage,
+  EventbriteFinale,
   RobotEmma,
   RobotEmmaPurpose,
   NewRegistrationsStatsOne,
