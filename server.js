@@ -233,11 +233,11 @@
 
 	var _Slide2 = _interopRequireDefault(_Slide);
 
-	var _Main = __webpack_require__(32);
+	var _Main = __webpack_require__(36);
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var _reactRouter = __webpack_require__(37);
+	var _reactRouter = __webpack_require__(41);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -660,6 +660,22 @@
 
 	var _stAndrews2 = _interopRequireDefault(_stAndrews);
 
+	var _flow = __webpack_require__(32);
+
+	var _flow2 = _interopRequireDefault(_flow);
+
+	var _flow3 = __webpack_require__(33);
+
+	var _flow4 = _interopRequireDefault(_flow3);
+
+	var _flow5 = __webpack_require__(34);
+
+	var _flow6 = _interopRequireDefault(_flow5);
+
+	var _flow7 = __webpack_require__(35);
+
+	var _flow8 = _interopRequireDefault(_flow7);
+
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -754,23 +770,23 @@
 	  );
 	};
 
-	var RobotEmma = function RobotEmma() {
+	var BoilerRoomBuilder = function BoilerRoomBuilder() {
 	  return _react2.default.createElement(
 	    'div',
-	    { className: (0, _classes.classes)(styles.base) },
+	    { className: (0, _classes.classes)(styles.title) },
 	    _react2.default.createElement(
 	      'div',
-	      { className: (0, _classes.classes)(styles.text) },
+	      { className: (0, _classes.classes)(styles.titleText) },
 	      _react2.default.createElement(
 	        'h1',
-	        { className: (0, _classes.classes)(styles.heading) },
-	        'Robot Emma'
+	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	        'BRB'
 	      )
 	    )
 	  );
 	};
 
-	var BoilerRoomBuilder = function BoilerRoomBuilder() {
+	var BoilerRoomBuilderUsage = function BoilerRoomBuilderUsage() {
 	  return _react2.default.createElement(
 	    'div',
 	    { className: (0, _classes.classes)(styles.base) },
@@ -778,9 +794,46 @@
 	      'div',
 	      { className: (0, _classes.classes)(styles.text) },
 	      _react2.default.createElement(
+	        'h2',
+	        { className: (0, _classes.classes)(styles.subHeading, { marginBottom: 0 }) },
+	        'A tool which is'
+	      ),
+	      _react2.default.createElement(
 	        'h1',
-	        { className: (0, _classes.classes)(styles.heading) },
-	        'BRB'
+	        { className: (0, _classes.classes)(styles.heading, { margin: '0.5em 0' }) },
+	        'Building ',
+	        _react2.default.createElement(
+	          'em',
+	          null,
+	          '15'
+	        ),
+	        ' apps',
+	        _react2.default.createElement('br', null),
+	        'Built by ',
+	        _react2.default.createElement(
+	          'em',
+	          null,
+	          '9'
+	        ),
+	        ' contributors',
+	        _react2.default.createElement('br', null),
+	        'Helping us out'
+	      )
+	    )
+	  );
+	};
+
+	var EventBrite = function EventBrite() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.title) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.titleText) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	        'Eventbrite'
 	      )
 	    )
 	  );
@@ -796,12 +849,61 @@
 	      _react2.default.createElement(
 	        'h1',
 	        { className: (0, _classes.classes)(styles.heading) },
+	        'Our integration launched',
+	        _react2.default.createElement('br', null),
+	        'for legacy regions on ',
+	        _react2.default.createElement('br', null),
 	        _react2.default.createElement(
 	          'em',
 	          null,
-	          'Eventbrite Integration'
+	          'September the 12th'
 	        ),
-	        ' for legacy regions launched on September the 12th'
+	        _react2.default.createElement('br', null)
+	      ),
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading) },
+	        '\uD83C\uDF89'
+	      )
+	    )
+	  );
+	};
+
+	var EventbriteFlow = function EventbriteFlow() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.base) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.text) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading) },
+	        'It\'s got a great flow'
+	      ),
+	      _react2.default.createElement(
+	        _Grid2.default,
+	        null,
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 3 },
+	          _react2.default.createElement('img', { src: _flow2.default, className: (0, _classes.classes)(styles.avatar) })
+	        ),
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 3 },
+	          _react2.default.createElement('img', { src: _flow4.default, className: (0, _classes.classes)(styles.avatar) })
+	        ),
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 3 },
+	          _react2.default.createElement('img', { src: _flow6.default, className: (0, _classes.classes)(styles.avatar) })
+	        ),
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 3 },
+	          _react2.default.createElement('img', { src: _flow8.default, className: (0, _classes.classes)(styles.avatar) })
+	        )
 	      )
 	    )
 	  );
@@ -816,8 +918,15 @@
 	      { className: (0, _classes.classes)(styles.text) },
 	      _react2.default.createElement(
 	        'h1',
-	        { className: (0, _classes.classes)(styles.heading) },
-	        'Since launch we have 4 integrations in the wild'
+	        { className: (0, _classes.classes)(styles.heading, { marginBottom: 0 }) },
+	        'It\'s currently in use by ',
+	        _react2.default.createElement('br', null),
+	        '4 events'
+	      ),
+	      _react2.default.createElement(
+	        'h2',
+	        { className: (0, _classes.classes)(styles.subHeading) },
+	        '3 of which are new to the platform'
 	      ),
 	      _react2.default.createElement(
 	        _Grid2.default,
@@ -847,7 +956,179 @@
 	  );
 	};
 
-	exports.default = [Who, BoilerRoomBuilder, RobotEmma, EventbriteLaunch, EventbriteUsage];
+	var RobotEmma = function RobotEmma() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.title) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.titleText) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	        'Robot Emma'
+	      )
+	    )
+	  );
+	};
+
+	var RobotEmmaPurpose = function RobotEmmaPurpose() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.base) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.text) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading) },
+	        'A robotic extension to human Emma!!!'
+	      )
+	    )
+	  );
+	};
+
+	var NewRegistrationsStatsOne = function NewRegistrationsStatsOne() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.base) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.text) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading) },
+	        'Promotes the ',
+	        _react2.default.createElement('br', null),
+	        'V3 on-boarding flow'
+	      ),
+	      _react2.default.createElement(
+	        _Grid2.default,
+	        null,
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 4 },
+	          _react2.default.createElement(
+	            'p',
+	            { className: (0, _classes.classes)({ margin: 0 }) },
+	            'BAT'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	            '58%'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 4 },
+	          _react2.default.createElement(
+	            'p',
+	            { className: (0, _classes.classes)({ margin: 0 }) },
+	            'V3 API'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	            _react2.default.createElement(
+	              'em',
+	              null,
+	              '80%'
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	var NewRegistrationsStatsOneResult = function NewRegistrationsStatsOneResult() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.title) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.titleText) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	        '+ 38%'
+	      )
+	    )
+	  );
+	};
+
+	var NewRegistrationsStatsTwo = function NewRegistrationsStatsTwo() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.base) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.text) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading) },
+	        'But wait... ',
+	        _react2.default.createElement('br', null),
+	        'there\'s more'
+	      ),
+	      _react2.default.createElement(
+	        _Grid2.default,
+	        null,
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 4 },
+	          _react2.default.createElement(
+	            'p',
+	            { className: (0, _classes.classes)({ margin: 0 }) },
+	            'BAT'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	            '15.38%'
+	          )
+	        ),
+	        _react2.default.createElement(
+	          _Item2.default,
+	          { span: 4 },
+	          _react2.default.createElement(
+	            'p',
+	            { className: (0, _classes.classes)({ margin: 0 }) },
+	            'V3 API'
+	          ),
+	          _react2.default.createElement(
+	            'h1',
+	            { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	            _react2.default.createElement(
+	              'em',
+	              null,
+	              '34.37%'
+	            )
+	          )
+	        )
+	      )
+	    )
+	  );
+	};
+
+	var NewRegistrationsStatsTwoResult = function NewRegistrationsStatsTwoResult() {
+	  return _react2.default.createElement(
+	    'div',
+	    { className: (0, _classes.classes)(styles.title) },
+	    _react2.default.createElement(
+	      'div',
+	      { className: (0, _classes.classes)(styles.titleText) },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
+	        '+ 123% !!!'
+	      )
+	    )
+	  );
+	};
+
+	exports.default = [Who, BoilerRoomBuilder, BoilerRoomBuilderUsage, EventBrite, EventbriteLaunch, EventbriteFlow, EventbriteUsage, RobotEmma, RobotEmmaPurpose, NewRegistrationsStatsOne, NewRegistrationsStatsOneResult, NewRegistrationsStatsTwo, NewRegistrationsStatsTwoResult];
 
 /***/ },
 /* 18 */
@@ -1091,6 +1372,30 @@
 /* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
+	module.exports = __webpack_require__.p + "b8da27750063f1b60660ad2a0451c3ec.png";
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "021d27613d3eda76d8805a81b9ad9cf4.png";
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "6ef1d78161ab58d5645c13a9c82ccd3f.png";
+
+/***/ },
+/* 35 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "bd04c057f2d74b4944cec4b5799f50bc.png";
+
+/***/ },
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -1101,11 +1406,11 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _SlideInSlideOut = __webpack_require__(33);
+	var _SlideInSlideOut = __webpack_require__(37);
 
 	var _SlideInSlideOut2 = _interopRequireDefault(_SlideInSlideOut);
 
-	var _Nav = __webpack_require__(35);
+	var _Nav = __webpack_require__(39);
 
 	var _Nav2 = _interopRequireDefault(_Nav);
 
@@ -1113,11 +1418,11 @@
 
 	var _Slides2 = _interopRequireDefault(_Slides);
 
-	__webpack_require__(39);
+	__webpack_require__(43);
 
 	var _classes = __webpack_require__(8);
 
-	var _styles = __webpack_require__(40);
+	var _styles = __webpack_require__(44);
 
 	var styles = _interopRequireWildcard(_styles);
 
@@ -1152,7 +1457,7 @@
 	};
 
 /***/ },
-/* 33 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1167,7 +1472,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _velocityReact = __webpack_require__(34);
+	var _velocityReact = __webpack_require__(38);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1202,13 +1507,13 @@
 	};
 
 /***/ },
-/* 34 */
+/* 38 */
 /***/ function(module, exports) {
 
 	module.exports = require("velocity-react");
 
 /***/ },
-/* 35 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1221,13 +1526,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _NavLink = __webpack_require__(36);
+	var _NavLink = __webpack_require__(40);
 
 	var _NavLink2 = _interopRequireDefault(_NavLink);
 
 	var _classes = __webpack_require__(8);
 
-	var _styles = __webpack_require__(38);
+	var _styles = __webpack_require__(42);
 
 	var styles = _interopRequireWildcard(_styles);
 
@@ -1282,7 +1587,7 @@
 	};
 
 /***/ },
-/* 36 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -1295,7 +1600,7 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
-	var _reactRouter = __webpack_require__(37);
+	var _reactRouter = __webpack_require__(41);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1304,13 +1609,13 @@
 	};
 
 /***/ },
-/* 37 */
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = require("react-router");
 
 /***/ },
-/* 38 */
+/* 42 */
 /***/ function(module, exports) {
 
 	'use strict';
@@ -1350,13 +1655,13 @@
 	});
 
 /***/ },
-/* 39 */
+/* 43 */
 /***/ function(module, exports) {
 
 	// empty (null-loader)
 
 /***/ },
-/* 40 */
+/* 44 */
 /***/ function(module, exports) {
 
 	'use strict';
