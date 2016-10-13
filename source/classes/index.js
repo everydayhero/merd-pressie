@@ -5,6 +5,6 @@ import merge from 'lodash/merge'
 export * from './traits'
 
 export const classes = (...styles) => (
-  cxs(prefixer(merge(...styles)))
+  cxs(prefixer(merge({}, ...styles)))
 )
 
