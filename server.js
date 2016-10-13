@@ -179,6 +179,7 @@
 	      ),
 	      _react2.default.createElement('meta', { charSet: 'utf-8' }),
 	      _react2.default.createElement('meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }),
+	      _react2.default.createElement('link', { href: 'https://fonts.googleapis.com/css?family=Lato', rel: 'stylesheet' }),
 	      renderStyles(styles)
 	    ),
 	    _react2.default.createElement(
@@ -278,7 +279,7 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { style: {
-	        backgroundImage: 'url(http://static1.gamespot.com/uploads/original/1550/15507091/2844642-1530281363-giphy.gif)',
+	        backgroundImage: 'url(https://hd.unsplash.com/photo-1431660370894-11a187f8cf92)',
 	        backgroundSize: 'cover',
 	        backgroundPosition: '50% 50%'
 	      }, className: (0, _classes.classes)(styles.title) },
@@ -288,7 +289,7 @@
 	      _react2.default.createElement(
 	        'h1',
 	        { className: (0, _classes.classes)(styles.heading, { margin: 0 }) },
-	        'Merd ... '
+	        'Merd'
 	      )
 	    )
 	  );
@@ -439,6 +440,7 @@
 	  display: 'flex',
 	  flexFlow: 'column',
 	  justifyContent: 'center',
+
 	  ':before': {
 	    content: '""',
 	    position: 'absolute',
@@ -446,7 +448,8 @@
 	    right: 0,
 	    top: 0,
 	    bottom: 0,
-	    backgroundColor: 'rgba(0, 0, 0, 0.6)'
+	    backgroundColor: '#00a044',
+	    mixBlendMode: 'multiply'
 	  }
 	});
 
@@ -463,7 +466,12 @@
 	  fontSize: '3em',
 	  letterSpacing: '0.005em',
 	  marginTop: '0',
-	  marginBottom: '1em'
+	  marginBottom: '1em',
+
+	  'em': {
+	    color: '#00a044',
+	    fontStyle: 'normal'
+	  }
 	};
 
 	var headingSmall = exports.headingSmall = _extends({}, heading, {
