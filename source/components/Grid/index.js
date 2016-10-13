@@ -1,5 +1,6 @@
 import React from 'react'
-import styles from './styles.css'
+import * as styles from './styles'
+import { classes } from '../../classes'
 
 class Grid extends React.Component {
   getChildContext () {
@@ -11,12 +12,16 @@ class Grid extends React.Component {
   render () {
     const {
       spacing,
-      children,
-      className
+      children
     } = this.props
 
+    const classNames = classes(
+      styles.base,
+      styles[spacing]
+    )
+
     return (
-      <div className={`${styles[spacing]} ${className}`}>
+      <div className={classNames}>
         {children}
       </div>
     )
@@ -28,7 +33,7 @@ Grid.childContextTypes = {
 }
 
 Grid.defaultProps = {
-  spacing: 'default'
+  spacing: 'standard'
 }
 
 export default Grid

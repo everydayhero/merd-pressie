@@ -8,7 +8,7 @@ import Main from '../layouts/Main'
 import { Route, IndexRoute } from 'react-router'
 
 export default (
-  <Route path={process.env.BASE_PATH || '/'} component={Main}>
+  <Route path='/' component={Main}>
     <IndexRoute component={Home} />
     <Route path='slides/:number' component={Slide} />
     <Route path='404' component={NotFound} />

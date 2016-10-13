@@ -4,26 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node node_modules/boiler-room-builder --serve",
+    "start": "brb serve",
     "deploy": "npm run build && gh-pages -d dist",
-    "build": "BASE_PATH='/merd-pressie' node node_modules/boiler-room-builder",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "BASE_PATH='/merd-pressie/' brb build --base-path='/merd-pressie/'"
   },
   "author": "Brad Parker <hi@bradparker.com>",
   "license": "ISC",
   "devDependencies": {
-    "boiler-room-builder": "github:everydayhero/boiler-room-builder#e2dde43",
-    "boiler-room-runner": "github:everydayhero/boiler-room-runner#da88b01",
+    "boiler-room-builder": "^1.0.0-18",
+    "boiler-room-runner": "^1.0.0-17",
+    "cxs": "^1.0.1",
     "gh-pages": "^0.11.0",
-    "leaflet": "^0.7.7",
-    "node-sass": "^3.8.0",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
-    "react-redux": "^4.4.5",
-    "react-router": "^2.5.2",
-    "redux": "^3.5.2",
-    "redux-thunk": "^2.1.0",
-    "tour-tracker": "github:everydayhero/tour-tracker",
-    "velocity-react": "^1.1.5"
+    "inline-style-prefixer": "^2.0.4",
+    "react": "^0.14.8",
+    "react-dom": "^0.14.8",
+    "react-router": "^2.8.1",
+    "velocity-react": "^1.1.8"
   }
 }

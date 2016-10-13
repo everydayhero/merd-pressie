@@ -1,20 +1,29 @@
 import React from 'react'
-import createServerApp from 'boiler-room-runner/server'
-import routes from './routes'
+import { createServer } from 'boiler-room-runner'
 import { renderToStaticMarkup } from 'react-dom/server'
-import Document from './layouts/Document'
 
-export const renderDocument = (
+import { basepath } from './shared'
+
+import Document from './layouts/Document'
+import routes from './routes'
+
+export const renderDocument = ({
+  assets = [],
   content = ''
-) => (
+}) => (
   '<!DOCTYPE html>' + renderToStaticMarkup(
     <Document
+      assets={assets}
       content={content}
     />
   )
 )
 
-export default createServerApp({
-  routes,
-  renderDocument
-})
+export default ({ assets }) => (
+  createServer({
+    assets,
+    routes,
+    basepath,
+    renderDocument
+  })
+)

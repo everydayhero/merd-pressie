@@ -1,6 +1,7 @@
 import React from 'react'
 
-import styles from '../components/Slides/styles.css'
+import { classes } from '../classes'
+import * as styles from '../components/Slides/styles'
 
 export default () => (
   <div style={{
@@ -8,8 +9,8 @@ export default () => (
     backgroundSize: 'cover',
     backgroundPosition: '50% 50%'
   }} className={styles.title}>
-    <div className={styles.titleText}>
-      <h1 className={styles.heading}>Merd ... </h1>
+    <div className={classes(styles.titleText)}>
+      <h1 className={classes(styles.heading)}>Merd ... </h1>
     </div>
   </div>
 )
